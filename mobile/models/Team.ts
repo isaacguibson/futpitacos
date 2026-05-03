@@ -1,4 +1,4 @@
 export default interface Team {
-    name: number;
+    name: string;
     colors: string[];
 }

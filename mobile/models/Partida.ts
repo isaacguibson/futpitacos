@@ -1,16 +1,17 @@
+import Clube from "./Clube";
 import Endereco from "./Endereco";
 import Palpite from "./Palpite";
 import Pitacard from "./Pitacard";
 
-export default interface Partida {
-    id: number;
-    clubeCasa: string;
-    clubeVisitante: string;
-    dataHora: Date;
-    golsCasa: number;
-    golsVisitante: number;
-    palpite: Palpite | null;
-    campeonato: number;
-    status: number;
-    infos: string;
+export default class Partida {
+    id: number | undefined;
+    clubeCasa: Clube | undefined;
+    clubeVisitante: Clube | undefined;
+    dataHora: Date | undefined;
+    golsCasa: number | undefined;
+    golsVisitante: number | undefined;
+    palpite: Palpite | undefined;
+    campeonato: number | undefined;
+    status: number | undefined;
+    infos: string | undefined;
 }

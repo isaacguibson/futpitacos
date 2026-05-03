@@ -22,6 +22,13 @@ const ColorScheme = {
   RareCardTextColor: "#ff004d",
   EpicCardTextColor: "#cc0ffd",
   GreenSelectedColor: "#67ec62",
+  PitacardComum: "#3B82F6",
+  PitacardRaro: "#F97316",
+  PitacardEpico: "#8B5CF6",
+  BordaPitacardComum: "#2563EB",
+  BordaPitacardRaro: "#EA580C",
+  BordaPitacardEpico: "#7C3AED",
+  PitacardVazia: "#D1D5DB",
 };
 //"#18b4ec"
 

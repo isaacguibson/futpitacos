@@ -1,7 +1,7 @@
-export default interface Pitacard {
-    id: number;
-    nome: string;
-    descricao: string;
-    tipoRaridade: number;
-    imagem: string;
+export default class Pitacard {
+    id: number | undefined;
+    nome: string | undefined;
+    descricao: string | undefined;
+    tipoRaridade: number | undefined;
+    imagem: string | undefined;
 }

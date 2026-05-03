@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: futpitacos_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: futpitacos
+      POSTGRES_USER: futpitacos
+      POSTGRES_PASSWORD: futpitacos123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U futpitacos -d futpitacos"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+

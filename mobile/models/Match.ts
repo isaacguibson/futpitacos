@@ -1,7 +1,7 @@
 import Team from "@/models/Team";
 
 export default interface Match {
-    id: number;
+    id: string;
     homeTeam: Team;
     awayTeam: Team;
     homeScore?: number;

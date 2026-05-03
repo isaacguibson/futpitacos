@@ -2,10 +2,10 @@ import Endereco from "./Endereco";
 import Partida from "./Partida";
 import Pitacard from "./Pitacard";
 
-export default interface Palpite {
-    id: number;
-    partida: Partida;
-    golsCasa: number;
-    golsVisitante: number;
-    pitacards: Pitacard[];
+export default class Palpite {
+    id: number | undefined;
+    partida: Partida | undefined;
+    golsCasa: number | undefined;
+    golsVisitante: number | undefined;
+    pitacards: Pitacard[] | undefined;
 }
