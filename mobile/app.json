@@ -19,7 +19,9 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.guibsonsoftwares.futpitacos",
+      "versionCode": 4
     },
     "web": {
       "output": "static",
@@ -43,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fca327c5-b9fd-4c6b-8a9c-23b797616584"
+      }
     }
   }
 }

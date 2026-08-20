@@ -1,8 +1,8 @@
 import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { ImageBackground, StyleSheet } from "react-native";
-import "react-native-reanimated";
+import { StyleSheet } from "react-native";
+import AnimatedBackground from "./animated-background";
 
 const TransparentTheme = {
   ...DefaultTheme,
@@ -14,11 +14,9 @@ const TransparentTheme = {
 
 export default function RootLayout() {
   return (
-    <ImageBackground
-      source={require("@/assets/images/background.png")}
-      style={styles.background}
-      resizeMode="cover"
-    >
+    <>
+      <AnimatedBackground />
+
       <ThemeProvider value={TransparentTheme}>
         <Stack
           screenOptions={{
@@ -36,7 +34,7 @@ export default function RootLayout() {
         </Stack>
         <StatusBar style="dark" />
       </ThemeProvider>
-    </ImageBackground>
+    </>
   );
 }
 
